@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KFJ95RP');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;21065412" />
+    
+    <link rel="canonical" href="https:&#x2F;&#x2F;va3zza.com&#x2F;rfc&#x2F;modern-repeater-linking&#x2F;" />
+    
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://va3zza.com/ rss.xml">
+    <link rel="webmention" href="https://webmention.io/va3zza.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/va3zza.com/xmlrpc" />
+
+    <title>
+RFC: A fast system for repeater linking using modern web technology
+ | Evan Pratten</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Urbanist:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://maxst.icons8.com">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/project_mosaic.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
+        integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="og:site" content="va3zza.com" />
+    <meta name="og:image" content="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;21065412" />
+    <meta name="twitter:creator" content="@ewpratten">
+    <meta name="og:site_name" content="Evan Pratten (VA3ZZA)" />
+    
+
+
+
+<meta property="og:title" content="RFC: A fast system for repeater linking using modern web technology - Evan Pratten" />
+<meta property="og:type" content="article" />
+
+<meta property="og:description" content="Evan Pratten is a college student, amateur radio operator, software developer, and more. This is his website." />
+<meta property="description" content="Evan Pratten is a college student, amateur radio operator, software developer, and more. This is his website." />
+
+<meta property="article:published_time" content="2021-11-17T00:00:00" />
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+    
+    
+    
+    {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "url": "https://va3zza.com/rfc/modern-repeater-linking/",
+    "headline": "RFC: A fast system for repeater linking using modern web technology",
+    "dateCreated": "2021-11-17T00:00:00",
+    "datePublished": "2021-11-17T00:00:00",
+    "dateModified": "2021-11-17T00:00:00",
+    "inLanguage": "en-CA",
+    "isFamilyFriendly": "true",
+    "accountablePerson": {
+        "@type": "Person",
+        "name": "Evan Pratten",
+        "url": "https://va3zza.com"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Evan Pratten",
+        "url": "https://va3zza.com"
+    },
+    "creator": {
+        "@type": "Person",
+        "name": "Evan Pratten",
+        "url": "https://va3zza.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Evan Pratten",
+        "url": "https://va3zza.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://avatars.githubusercontent.com/u/21065412",
+            "width": "460",
+            "height": "460"
+        }
+    },
+    "mainEntityOfPage": "True",
+    "keywords": [],
+    "genre": [],
+    "articleSection": "Blog Post",
+    "__articleBody__": "{{content}}"
+}
+</script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-card">
+            
+<div class="row">
+    <div class="headshot-container">
+        <img src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;21065412" alt="Headshot" style="height:50px;width:auto;">
+    </div>
+    <div class="text-container">
+        <h1>Evan Pratten</h1>
+        <p>
+            Software Developer
+        </p>
+    </div>
+</div>
+
+        </div>
+        <div class="navigation-bar">
+            <hr>
+            <p>
+                <a href="/">Home</a> |
+                <a href="/blog">Blog</a> |
+                <a href="/contact">Contact</a>
+                
+                
+                
+            </p>
+            <hr>
+        </div>
+        <div class="page-content">
+            
+<br><br>
+<article class="markdown-body">
+    
+    <h1>RFC: A fast system for repeater linking using modern web technology</h1>
+    
+    <div style="text-align: justify;">
+        <p>The three common standards for amateur radio repeater linking are all built on old and cumbersome technology. In the world of repeater linking, the most predominant standards for interconnection are:</p>
+<ul>
+<li><a rel="noopener" target="_blank" href="https://secure.echolink.org/">Echolink</a>
+<ul>
+<li>Closed-source</li>
+<li>Strict governance</li>
+<li>A strong lack of APIs</li>
+<li>Does not allow cross-system linking
+<ul>
+<li>ex: cannot link Echolink conferences to Allstar nodes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a rel="noopener" target="_blank" href="https://allstarlink.org/">AllStarLink</a>
+<ul>
+<li>Absolute overkill</li>
+<li>Most node configurations require special hardware to set up</li>
+<li>Built on the Asterisk PBX</li>
+<li>Uses phone networks to link repeaters</li>
+</ul>
+</li>
+<li><a rel="noopener" target="_blank" href="http://www.irlp.net/">IRLP</a>
+<ul>
+<li>Requires specialized hardware</li>
+<li>Uses old connection standards</li>
+<li>Closed-source</li>
+</ul>
+</li>
+</ul>
+<p>In my ideal world, there would be a small, lightweight, and configurable linking backend that developers could extend in any way they wished. This proposal is not the end-all-be-all solution, but a step in the direction of this vision.</p>
+<h2 id="node-discovery">Node discovery</h2>
+<p>In a linking system like Echolink, <em>all</em> clients announce themselves to a central directory server. This server then decides if a client is &quot;worthy&quot; (verified license, not banned from the service, ...) then lists the client on <a rel="noopener" target="_blank" href="https://secure.echolink.org/logins.jsp">a somewhat parsable webpage</a>. The topology for such a setup is as follows:</p>
+<div class="mermaid">
+flowchart LR
+    You(You) --- D1((Directory Server))
+    D1 --- NA(Node A) & NB(Node B) & P1(Proxy) & ND(Node D)
+    P1 --- NC(Node C)
+</div>
+<p>In most cases, this works just fine. However, there are two off the top of my head that raise an issue:</p>
+<ul>
+<li><code>Node A</code> and <code>Node B</code> are owned by a club that wants to keep the nodes private for member use only.</li>
+<li><code>Node C</code> is behind a restrictive firewall, or does not want to expose a host to the public internet.</li>
+</ul>
+<p>The second of the two scenarios is solved already in the above graph using a proxy. Echolink proxies have become extremely common due to the fact very few people have access to a network where their host can be exposed publicly for other nodes to directly connect to when making a link.</p>
+<p>Echolink's solution to the first issue is fairly lacking in my opinion. Nodes only have the option to restrict connections based on a REGEX on their callsign. This means maintaining a list of allowed users, and updating <em>every</em> club-owned node when that changes.</p>
+<h3 id="decentralizing-directory-services">Decentralizing directory services</h3>
+<p>While I like Echolink a lot, I think some improvements could be made to both the node directory system, and how nodes link to each other. Ideally, I see a setup as follows:</p>
+<div class="mermaid">
+flowchart TD
+    D1((Directory A))
+    D1 --- NA(Node A) & NB(Node B) & NC(Node C)
+    D2((Directory B))
+    D2 --- NC & ND(Node D)
+    D3((Private Directory))
+    D3 --- NE(Node E) & NF(Node F)
+    NE --> D2
+</div>
+<p>In this world, anyone could host a directory server, and either open it up to the public, or restrict it by means of their choosing (callsign rules, password, key-based access, ...). Nodes can then connect to one or many directories of their choosing. This could allow situations where a node could sit on the edge between two private intranets and have access to other nodes on <em>both</em> sides of the boundary without requiring either side to expose some part of itself to the public internet.</p>
+<h3 id="routing">Routing</h3>
+<p>I also envision a routing system where nodes attached to more than one directory service would periodically propagate information about their first-hop directories to other first-hop directories. An example of such interaction from the perspective of <code>Node C</code> would be:</p>
+<pre data-lang="text" style="background-color:#2b303b;color:#c0c5ce;" class="language-text "><code class="language-text" data-lang="text"><span>Node C -&gt; Directory A: You can find Directory B at &lt;address&gt;
+</span><span>Node C -&gt; Directory B: You can find Directory A at &lt;address&gt;
+</span></code></pre>
+<p><code>Node E</code> would have a different interaction. Since <code>Private Directory</code> is <em>private</em>, its announcement would <em>exclude</em> that directory:</p>
+<pre data-lang="text" style="background-color:#2b303b;color:#c0c5ce;" class="language-text "><code class="language-text" data-lang="text"><span>Node E -&gt; Private Directory: You can find Directory B at &lt;address&gt;
+</span></code></pre>
+<p>At this point, the directory servers should then be able to directly query eachother about their &quot;routing tables&quot;. Over time, each directory server would build a list of which directory servers it can reach for information about nodes.</p>
+<p>The rable for <code>Private Directory</code> would look like this:</p>
+<table><thead><tr><th>Server</th><th>Address</th><th>Hops</th></tr></thead><tbody>
+<tr><td>Directory B</td><td><code>&lt;address&gt;</code></td><td>1</td></tr>
+<tr><td>Directory A</td><td><code>&lt;address&gt;</code></td><td>2</td></tr>
+</tbody></table>
+<p>If <code>Node F</code> were to try connecting to <code>Node A</code>, the order of messages would be:</p>
+<pre data-lang="text" style="background-color:#2b303b;color:#c0c5ce;" class="language-text "><code class="language-text" data-lang="text"><span>Node F -&gt; Private Directory: Do you know Node A?
+</span><span>
+</span><span># Private Directory queries the first table entry
+</span><span>Private Directory -&gt; Directory B: Do you know Node A?
+</span><span>Directory B -&gt; Private Directory: No
+</span><span>
+</span><span># Private Directory queries the second table entry
+</span><span>Private Directory -&gt; Directory A: Do you know Node A?
+</span><span>Directory A -&gt; Private Directory: Node A is at &lt;address&gt;
+</span><span>
+</span><span># Node F is informed of the address of Node A
+</span><span>Private Directory -&gt; Node F: Node A is at &lt;address&gt;
+</span></code></pre>
+<p>Of course, since <code>Node F</code> is <em>only</em> connected to a <em>private</em> directory service, if <code>Node A</code> were to try connecting to <code>Node F</code>, the order of messages would be:</p>
+<pre data-lang="text" style="background-color:#2b303b;color:#c0c5ce;" class="language-text "><code class="language-text" data-lang="text"><span>Node A -&gt; Directory A: Do you know Node F?
+</span><span>
+</span><span># Directory A queries the first table entry
+</span><span>Directory A -&gt; Directory B: Do you know Node F?
+</span><span>Directory B -&gt; Directory A: No
+</span><span>
+</span><span># Directory A was never informed that Private Directory exists, since it is private
+</span><span># Thus, there is no route to Node F
+</span><span>Directory A -&gt; Node A: No
+</span></code></pre>
+<p>Like every other piece of amateur radio backbone software, this routing system relies on trust. I am not an expert in identity verification, and I will not attempt to devise a system for stopping bad actors from poisoning the routing tables in this document.</p>
+<h2 id="audio-transport-using-modern-tech">Audio transport using modern tech</h2>
+<p>So far in this document, node addresses have been used extensively, yet nodes are not expected to expose any ports to the internet. In the real-world, it has become very common to see peer-to-peer real-time media links in the form of video conferencing services. These services largely rely on WebRTC, a standardized, strong, and reliable protocol for peer-to-peer content streams.</p>
+<p>While WebRTC still struggles to deliver perfect quality audio and video simultaneously, it is more than capable of <em>just</em> streaming audio, with the added benefit that basically every browser supports it natively. Most programming languages also have one or many strong WebRTC libraries to work with.</p>
+<p>This means that a full implementation of this document would result in something similar to the following:</p>
+<ul>
+<li>Directory server
+<ul>
+<li>Handles incoming clients</li>
+<li>Handles routing tables</li>
+<li>Handles access rules</li>
+<li>Performs client lookups when requested</li>
+<li>Possibly provides telemetry information</li>
+</ul>
+</li>
+<li>Client library
+<ul>
+<li>Establishes connections with one or more directories</li>
+<li>Periodically propagates information about connected directories</li>
+<li>Can request to create or destroy a link</li>
+<li>When a link is created, it exposes a direct WebRTC connection to the remote node</li>
+<li>Hands off responsibility for the connection to whatever software wraps the library</li>
+</ul>
+</li>
+</ul>
+<p>The wrapping software could be one of:</p>
+<ul>
+<li>A website</li>
+<li>A smartphone app</li>
+<li>A headless application running on a Raspberry Pi that connects straight to a radio for a simplex node</li>
+<li>An application running on a repeater controller</li>
+<li>Anything else</li>
+</ul>
+
+    </div>
+
+    
+    
+    <br>
+    <hr>
+    <script src="https://utteranc.es/client.js" repo="ewpratten/va3zza.com" issue-term="title" label="comment"
+        theme="github-light" crossorigin="anonymous" async>
+        </script>
+    
+
+</article>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+
+        </div>
+
+        
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5912H4H03P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5912H4H03P');
+    </script>
+
+    <script>
+        if (window.performance && performance.getEntriesByType) { // avoid error in Safari 10, IE9- and other old browsers
+            let navTiming = performance.getEntriesByType('navigation')
+            if (navTiming.length > 0) { // still not supported as of Safari 14...
+                let serverTiming = navTiming[0].serverTiming
+                if (serverTiming && serverTiming.length > 0) {
+                    for (let i = 0; i < serverTiming.length; i++) {
+                        if (serverTiming[i].name == 'source') {
+                            if (serverTiming[i].description == 'net44') {
+                                document.getElementById('ampr-notice').style.display = 'block';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    
+    <script>
+        if (window.location.hostname == 'retrylife.ca') {
+            window.location.href = window.location.href.replace('retrylife.ca', 'va3zza.com');
+        }
+    </script>
+</body>
+
+</html>
